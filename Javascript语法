@@ -1,0 +1,88 @@
+JavaScript 一种直译式脚本语言，是一种动态类型语言，内置支持类型。它的解释器被称为JavaScript引擎，该引擎内置于现代的所有浏览器中。
+在HTML网页上使用JavaScript可以为HTML网页增加动态功能。
+作为一种所有浏览器都支持的脚本性语言，在HTML中应用JavaScript一般有以下目的：
+    在客户端读写HTML元素，实现如切换的文字、滚动条等动态效果。
+    响应浏览器时间，例如窗口变大、变小等。
+    验证表单输入，常见于密码的两次输入是否相同、出生年月是否小于当前时间等。
+
+在HTML中嵌入JavaScript有两种方式：内部嵌入和外部链接。内部嵌入是指直接在HTML中用<script>标签写入脚本；
+外部链接是指在HTML中通过文件名引用独立的脚本文件。
+
+声明变量时无需指明类型
+
+关键字new是JavaScript中用于新建组件实例的关键字，定义数组时需用new建立一个Array对象，并在其参数中给出数组元素；也可以不给，之后通过下标赋值。
+
+JavaScript中的对象类型与Python中的Dictionary类型相似，都是用大括号以键值对的方式表达数据，但其语法不完全相同。
+在Python中Dictionary的“键”是任意数据类型，而在JavaScript的对象中，“键”只能以成员变量的方式出现，定义时键上不加双引号。和C++类似。
+访问时既可以使用下标访问，也可以使用成员变量访问(.)。
+
+支持字符串拼接，自增++, 自减--, 字符串与数字相加结果为字符串。
+
+JavaScript用关键字function定义函数，语法如下
+//函数定义
+function functionname(param1,param2...)
+{
+Block_of function
+}
+
+//函数调用
+functionname(param1, param2...);
+
+函数中的返回值是可选的，如果有，用return返回
+function sum(a, b, c)
+{
+return a+b+c;
+}
+
+result = sum(5,6,10);
+
+JS有两种判断逻辑控制语句：if和switch. if语句用于对不同的条件执行不同的代码块：switch语句用于对一个表达式的不同结果执行不同的代码块，和C语言相同
+
+if ( condition1 )
+{
+block_of_condition1
+}
+else if ( condition2 )
+{
+block_of_condition2
+}
+else
+{
+block_of_others
+}
+
+switch(expression)
+{
+case value1:
+  block_for_value1
+  break;
+case value2:
+  block_for_value2
+  break;
+default:
+  block_for_others
+}
+
+JS的循环语句有for和while两种，各有两种用法
+for第一种用法和C语言相同
+for (sentence1; sentence2; sentence3)
+{
+  Block_of_loop
+}
+for的第2中用法与Python中的语义相似
+for (x in array)
+{
+  block_of_loop
+}
+
+//while(1)
+while (expression)
+{
+  block_of_loop
+}
+//while(2)
+do
+{
+  block_of_loop
+}while(expression)
+
